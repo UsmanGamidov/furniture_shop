@@ -1,0 +1,200 @@
+/* ========== ФОРМЫ ========== */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+
+/* ========== ТАБЛИЦЫ ========== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+th,
+td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+
+/* ========== СООБЩЕНИЯ ========== */
+p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* ========== ФОРМА АВТОРИЗАЦИИ ========== */
+.auth-form {
+  max-width: 400px;
+  margin: 60px auto;
+  margin-top: 170px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #222;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.auth-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #005fc2;
+}
+
+.auth-link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* ========== КНОПКИ ========== */
+.btn-orange {
+  background-color: #ff6a00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-orange:hover {
+  background-color: #e15500;
+}
+
+.btn-red {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+  background-color: #c7252e;
+}
+
+/* ========== ХАРАКТЕРИСТИКИ ========== */
+.specs-grid {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.specs-grid p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.related-products {
+  margin-top: 60px;
+}
+
+
+/* ========== АДАПТАЦИЯ ТАБЛИЦ ========== */
+@media (max-width: 768px) {
+  /* table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  } */
+
+  tr {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  td {
+    text-align: left;
+    padding: 10px 12px;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+
+    color: #666;
+  }
+
+  td img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 485px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+      font-size: 10px;
+      margin-left: 0px;
+  }
+}

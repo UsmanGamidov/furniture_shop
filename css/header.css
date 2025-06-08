@@ -1,0 +1,165 @@
+/* ======= ХЕДЕР ======= */
+.overlay-header {
+  border-radius: 20px;
+  position: fixed;
+  width: 97%;
+  background-color: rgba(255, 255, 255, 0.475); /* белый, полупрозрачный */
+  backdrop-filter: blur(6px);
+  z-index: 10;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.189);
+  padding: 10px 20px;
+}
+
+.header-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* ======= ЛОГО ======= */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* ======= МЕНЮ ======= */
+.main-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.main-nav a.active {
+  color: #0674ea;
+  font-weight: bold;
+}
+
+.main-nav a {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  padding: 6px 10px;
+  transition: all 0.25s ease;
+  transform: scale(1);
+  display: inline-block;
+}
+
+.main-nav a:hover {
+  color: #0056b3;
+  transform: scale(1.08);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  margin: 5px 0px;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #b4d1f1b4;
+}
+
+/* === Хедер поверх слайдера === */
+
+/* Показываем бургер на узких экранах */
+@media (max-width: 1035px) {
+  .overlay-header {
+    right: 10px;
+    left: 10px;
+  }
+
+  .burger {
+    display: block;
+    order: 2;
+    margin-left: auto;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    order: 3;
+  }
+
+  .main-nav {
+    display: none;
+    flex-wrap: wrap;               /* Позволяет перенос */
+    flex-direction: row;           /* В строку */
+    justify-content: flex-start;   /* Выравнивание слева */
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .header-line {
+    flex-wrap: wrap;
+  }
+}
+
+/* ======= АДАПТИВ ======= */
+@media (max-width: 768px) {
+  .header-line {
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-nav a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-nav a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 325px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .burger {
+    font-size: 22px;
+  }
+}

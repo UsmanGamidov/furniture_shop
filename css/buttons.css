@@ -1,0 +1,44 @@
+
+/* ========== КНОПКИ ========== */
+button,
+.btn-orange {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-orange:hover,
+button:hover {
+  background-color: #005fc2;
+}
+
+.btn-red {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-red:hover {
+  background-color: #c7252e;
+}
+
+.btn-in-cart {
+  background: #d61f1f;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: default;
+}
